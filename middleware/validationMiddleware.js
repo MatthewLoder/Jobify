@@ -20,5 +20,6 @@ export const validateTest = withValidationErrors([
     .notEmpty()
     .withMessage("name is required")
     .isLength({ min: 3, max: 50 })
-    .withMessage("message needs to be within 3 and 50"),
+    .withMessage("message needs to be within 3 and 50")
+    .trim(),
 ]);
